@@ -16,7 +16,7 @@ Este proyecto realiza un análisis de segmentación y precios utilizando PySpark
   - Google Drive: Los archivos deben estar almacenados en una carpeta accesible desde Google Drive.
 
 ## Estructura de los Datos
--- Segmentacion.csv
+### Segmentacion.csv
 | **Columna** | **Descripción**                  |
 |-------------|----------------------------------|
 | GROUPM      | Grupo de segmentación           |
@@ -24,7 +24,7 @@ Este proyecto realiza un análisis de segmentación y precios utilizando PySpark
 | SUBFAM      | Subfamilia dentro de la familia |
 | VALUE       | Valor asociado al grupo         |
 
--- Precios.csv
+### Precios.csv
 | **Columna** | **Descripción**                  |
 |-------------|----------------------------------|
 | RUT_CLI     | Identificador único del cliente |
