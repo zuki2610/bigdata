@@ -29,3 +29,39 @@ Este proyecto realiza un análisis de segmentación y precios utilizando PySpark
 |-------------|----------------------------------|
 | RUT_CLI     | Identificador único del cliente |
 | SEGMENTO    | Segmento al que pertenece       |
+
+
+## Instrucciones de Uso
+1. Montar Google Drive
+El script monta Google Drive para acceder a los archivos de datos:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+2. Configurar Rutas
+Asegúrate de que los archivos Segmentacion.csv y Precios.csv estén en una carpeta llamada Datos dentro de tu Google Drive.
+
+python
+
+```python
+ruta_segmentacion = "/content/drive/My Drive/Datos/Segmentacion.csv"
+ruta_precios = "/content/drive/My Drive/Datos/Precios.csv"
+```
+
+3. Ejecutar el Script
+Copia y pega el código en Google Colab y ejecútalo. El análisis incluye:
+
+- Conteo de registros en ambos archivos.
+- Validación y partición por FAM y SUBFAM.
+- Verificación de márgenes en el rango [0.1, 1].
+- Cálculo de clientes únicos por grupo y su promedio.
+- Cálculo de márgenes (máximo, promedio y mínimo) para RUT_CLI = 66666666.
+
+4. Resultados
+Los resultados incluyen:
+
+- El número de registros en ambos archivos.
+- Clientes únicos por grupo y promedio.
+- Validación de márgenes en el rango deseado.
+- Estadísticas de márgenes para un cliente específico.
