@@ -1,7 +1,7 @@
-#Análisis de Segmentación y Precios con PySpark
+# Análisis de Segmentación y Precios con PySpark
 Este proyecto realiza un análisis de segmentación y precios utilizando PySpark en un entorno de Google Colab. Los datos provienen de dos archivos CSV: Segmentacion.csv y Precios.csv, alojados en Google Drive.
 
-##Objetivos del Análisis
+## Objetivos del Análisis
 - Validar cuántos registros tienen ambos archivos (Segmentacion y Precios).
 - Realizar una partición de la matriz de precios por familia (FAM) y subfamilia (SUBFAM).
 - Validar que los márgenes (VALUE) se mantengan entre 0.1 y 1.
