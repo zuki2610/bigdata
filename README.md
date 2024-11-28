@@ -14,3 +14,18 @@ Este proyecto realiza un análisis de segmentación y precios utilizando PySpark
   - Segmentacion.csv: Contiene la información de los grupos.
   - Precios.csv: Contiene información de clientes (RUT_CLI) y sus segmentos (SEGMENTO).
   - Google Drive: Los archivos deben estar almacenados en una carpeta accesible desde Google Drive.
+
+## Estructura de los Datos
+-- Segmentacion.csv
+| **Columna** | **Descripción**                  |
+|-------------|----------------------------------|
+| GROUPM      | Grupo de segmentación           |
+| FAM         | Familia del grupo               |
+| SUBFAM      | Subfamilia dentro de la familia |
+| VALUE       | Valor asociado al grupo         |
+
+-- Precios.csv
+| **Columna** | **Descripción**                  |
+|-------------|----------------------------------|
+| RUT_CLI     | Identificador único del cliente |
+| SEGMENTO    | Segmento al que pertenece       |
